@@ -3,5 +3,10 @@
   [message1]="homeMessage()"
   [message2]="'This is coming from parent hard coded'"
 />
+<app-counter />
 <!-- passing an event through eveny handler to component -->
-<input type="text" (keyup)="KeyUpHandler($event)" />
+<input
+  placeholder="Type something please"
+  type="text"
+  (keyup)="KeyUpHandler($event)"
+/>
