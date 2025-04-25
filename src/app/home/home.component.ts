@@ -9,4 +9,8 @@ import { GreetingComponent } from '../components/greeting/greeting.component';
 })
 export class HomeComponent {
   homeMessage = signal('Hello this is coming from parent component variable');
+
+  KeyUpHandler(event: KeyboardEvent) {
+    console.log(`User pressed the ${event.key} key`);
+  }
 }
