@@ -1,1 +1,5 @@
-<p>home works!</p>
+<!-- I sent one message directly from child component the second one is from a variable that over wrote the childs message coming from parent component and the 3rd is a hard coded over write of the message  -->
+<app-greeting
+  [message1]="homeMessage()"
+  [message2]="'This is coming from parent hard coded'"
+/>
