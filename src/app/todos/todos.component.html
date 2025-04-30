@@ -1,1 +1,9 @@
-<p>todos works!</p>
+@for (todo of todoItems(); track todo.id) {
+
+<ul>
+  <li>{{ todo.id }}</li>
+  <li>{{ todo.userId }}</li>
+  <li>{{ todo.title }}</li>
+  <li>{{ todo.completed }}</li>
+</ul>
+}
